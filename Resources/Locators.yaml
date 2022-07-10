@@ -1,0 +1,23 @@
+sigin: xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.Button[1] 
+username: xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.EditText[1]
+password1: com.example.myapplication:id/password
+button_sigin: com.example.myapplication:id/signIn
+search: com.example.myapplication:id/search_flight
+nomor_penerbangan: com.example.myapplication:id/flight_number
+button_search: com.example.myapplication:id/searchFlight
+results: xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TableLayout/android.widget.TableRow[2]/android.widget.TextView[1]
+book: com.example.myapplication:id/book
+from: com.example.myapplication:id/spinnerFrom
+newyork: xpath=/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]
+to: com.example.myapplication:id/spinnerTo
+london: xpath=/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]
+class: com.example.myapplication:id/spinnerClass
+first: xpath=/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[2]
+start_date: com.example.myapplication:id/textStartDate
+Date: xpath=//android.view.View[@content-desc="14 August 2019"]
+button_date: android:id/button1
+flight: com.example.myapplication:id/radioButtonFlight
+button_book: com.example.myapplication:id/book_flight
+price: com.example.myapplication:id/price2
+confrim: com.example.myapplication:id/confirm_order
+ticket: com.example.myapplication:id/checkedTextView

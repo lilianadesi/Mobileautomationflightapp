@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.0 on win32)" generated="20220707 00:34:41.824" rpa="false" schemaversion="3">
+<suite id="s1" name="Booking" source="C:\Users\Wahyu Nugraha\Documents\mobile\Mobileflightapp\suites\booking.robot">
+<test id="s1-t1" name="user should be able to booking in Application" line="8">
+<kw name="Open Flight Application" library="search" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appActivity=${ACTIVITY_NAME}</arg>
+<arg>appPackage=${PACKAGE_NAME}</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>newCommandTimeout=5000</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220707 00:34:42.067" endtime="20220707 00:34:54.101"/>
+</kw>
+<status status="PASS" starttime="20220707 00:34:42.067" endtime="20220707 00:34:54.101"/>
+</kw>
+<kw name="User Login" library="search">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${sigin}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220707 00:34:54.107" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.Button[1]'.</msg>
+<status status="PASS" starttime="20220707 00:34:54.103" endtime="20220707 00:34:55.234"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220707 00:35:00.242" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220707 00:34:55.235" endtime="20220707 00:35:00.242"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${username}</arg>
+<arg>${email}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220707 00:35:00.250" level="INFO">Typing text 'support@ngendigital.com' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.EditText[1]'</msg>
+<status status="PASS" starttime="20220707 00:35:00.243" endtime="20220707 00:35:00.352"/>
+</kw>
+<kw name="Input Password" library="AppiumLibrary">
+<arg>${password1}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into text field identified by `locator`.</doc>
+<msg timestamp="20220707 00:35:00.356" level="INFO">Typing password into text field 'com.example.myapplication:id/password'</msg>
+<status status="PASS" starttime="20220707 00:35:00.352" endtime="20220707 00:35:01.213"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${button_sigin}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220707 00:35:01.217" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
+<status status="PASS" starttime="20220707 00:35:01.213" endtime="20220707 00:35:01.754"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220707 00:35:06.764" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220707 00:35:01.755" endtime="20220707 00:35:06.764"/>
+</kw>
+<status status="PASS" starttime="20220707 00:34:54.102" endtime="20220707 00:35:06.764"/>
+</kw>
+<kw name="User Clik button book" library="booking">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${book}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220707 00:35:06.771" level="INFO">Clicking element 'com.example.myapplication:id/book'.</msg>
+<status status="PASS" starttime="20220707 00:35:06.766" endtime="20220707 00:35:06.853"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220707 00:35:11.868" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220707 00:35:06.853" endtime="20220707 00:35:11.868"/>
+</kw>
+<status status="PASS" starttime="20220707 00:35:06.765" endtime="20220707 00:35:11.869"/>
+</kw>
+<kw name="User makes booking" library="booking">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${from}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220707 00:35:11.879" level="INFO">Clicking element 'com.example.myapplication:id/spinnerFrom'.</msg>
+<status status="PASS" starttime="20220707 00:35:11.871" endtime="20220707 00:35:11.970"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220707 00:35:14.977" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220707 00:35:11.970" endtime="20220707 00:35:14.977"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${newyork}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220707 00:35:14.981" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]'.</msg>
+<status status="PASS" starttime="20220707 00:35:14.977" endtime="20220707 00:35:15.778"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${to}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220707 00:35:15.781" level="INFO">Clicking element 'com.example.myapplication:id/spinnerTo'.</msg>
+<status status="PASS" starttime="20220707 00:35:15.778" endtime="20220707 00:35:15.857"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220707 00:35:18.870" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220707 00:35:15.857" endtime="20220707 00:35:18.870"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${london}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220707 00:35:18.876" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]'.</msg>
+<status status="PASS" starttime="20220707 00:35:18.871" endtime="20220707 00:35:18.969"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${class}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220707 00:35:18.972" level="INFO">Clicking element 'com.example.myapplication:id/spinnerClass'.</msg>
+<status status="PASS" starttime="20220707 00:35:18.969" endtime="20220707 00:35:19.714"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220707 00:35:22.715" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220707 00:35:19.714" endtime="20220707 00:35:22.716"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${first}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220707 00:35:22.719" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[2]'.</msg>
+<status status="PASS" starttime="20220707 00:35:22.716" endtime="20220707 00:35:23.521"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${start_date}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220707 00:35:23.529" level="INFO">Clicking element 'com.example.myapplication:id/textStartDate'.</msg>
+<status status="PASS" starttime="20220707 00:35:23.521" endtime="20220707 00:35:23.617"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220707 00:35:26.623" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220707 00:35:23.618" endtime="20220707 00:35:26.623"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${Date}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220707 00:35:26.626" level="INFO">Clicking element 'xpath=//android.view.View[@content-desc="14 August 2019"]'.</msg>
+<status status="PASS" starttime="20220707 00:35:26.624" endtime="20220707 00:35:27.456"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${button_date}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220707 00:35:27.460" level="INFO">Clicking element 'android:id/button1'.</msg>
+<status status="PASS" starttime="20220707 00:35:27.456" endtime="20220707 00:35:27.617"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${flight}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220707 00:35:27.620" level="INFO">Clicking element 'com.example.myapplication:id/radioButtonFlight'.</msg>
+<status status="PASS" starttime="20220707 00:35:27.617" endtime="20220707 00:35:28.364"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${button_book}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220707 00:35:28.368" level="INFO">Clicking element 'com.example.myapplication:id/book_flight'.</msg>
+<status status="PASS" starttime="20220707 00:35:28.364" endtime="20220707 00:35:28.909"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220707 00:35:33.915" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220707 00:35:28.909" endtime="20220707 00:35:33.916"/>
+</kw>
+<status status="PASS" starttime="20220707 00:35:11.870" endtime="20220707 00:35:33.916"/>
+</kw>
+<kw name="User choose price" library="booking">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${price}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220707 00:35:33.926" level="INFO">Clicking element 'com.example.myapplication:id/price2'.</msg>
+<status status="PASS" starttime="20220707 00:35:33.918" endtime="20220707 00:35:34.013"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${confrim}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220707 00:35:34.017" level="INFO">Clicking element 'com.example.myapplication:id/confirm_order'.</msg>
+<status status="PASS" starttime="20220707 00:35:34.013" endtime="20220707 00:35:34.688"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220707 00:35:37.696" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220707 00:35:34.688" endtime="20220707 00:35:37.696"/>
+</kw>
+<status status="PASS" starttime="20220707 00:35:33.917" endtime="20220707 00:35:37.697"/>
+</kw>
+<kw name="Verity booking success" library="booking">
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${ticket}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20220707 00:35:37.699" endtime="20220707 00:35:37.757"/>
+</kw>
+<status status="PASS" starttime="20220707 00:35:37.699" endtime="20220707 00:35:37.757"/>
+</kw>
+<status status="PASS" starttime="20220707 00:34:42.066" endtime="20220707 00:35:37.758"/>
+</test>
+<doc>booking testcase</doc>
+<status status="PASS" starttime="20220707 00:34:41.826" endtime="20220707 00:35:37.760"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Booking">Booking</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
