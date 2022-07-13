@@ -1,6 +1,6 @@
 sigin: xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.Button[1] 
 username: xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.EditText[1]
-password1: com.example.myapplication:id/password
+password1: xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.EditText[2]
 button_sigin: com.example.myapplication:id/signIn
 search: com.example.myapplication:id/search_flight
 nomor_penerbangan: com.example.myapplication:id/flight_number
@@ -21,3 +21,4 @@ button_book: com.example.myapplication:id/book_flight
 price: com.example.myapplication:id/price2
 confrim: com.example.myapplication:id/confirm_order
 ticket: com.example.myapplication:id/checkedTextView
+logo: xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ImageView[1]

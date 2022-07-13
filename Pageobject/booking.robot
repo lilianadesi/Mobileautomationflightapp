@@ -2,17 +2,9 @@
 Library                     AppiumLibrary
 Variables                    ../Resources/locators.yaml
 
-*** Variables ***
-${REMOTE_URL}               http://127.0.0.1:4723/wd/hub
-${PLATFORM_NAME}            Android
-${PLATFORM_VERSION}         9.0 
-${DEVICE_NAME}              emulator-5554
-${PACKAGE_NAME}             com.example.myapplication 
-${ACTIVITY_NAME}            com.example.myapplication.MainActivity
-
 
 *** Keywords ***
-User Clik button book
+User tab button book
     Click Element               ${book}
     sleep       5s
 User makes booking
