@@ -2,7 +2,7 @@
 
 ### Requirements
 
-* Pyton
+* Pyhton
 * Robot Framework
 * Android Virtual Devices
 * Appium Server
