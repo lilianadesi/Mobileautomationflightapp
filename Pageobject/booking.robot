@@ -5,28 +5,35 @@ Variables                    ../Resources/locators.yaml
 
 *** Keywords ***
 User tab button book
-    Click Element               ${book}
-    sleep       5s
+    Click Element                       ${book}
+
 User makes booking
-    Click Element               ${from}
-    sleep       3s
-    Click Element               ${newyork}
-    Click Element               ${to}
-    sleep       3s
-    Click Element               ${london}
-    Click Element               ${class}
-    sleep       3s
-    Click Element               ${first}
-    Click Element               ${start_date}
-    sleep       3s
-    Click Element               ${Date}
-    Click Element               ${button_date}
-    Click Element               ${flight}
-    Click Element               ${button_book}
-    sleep       5s
+    Wait Until Element Is Visible       ${from}
+    Click Element                       ${from}
+    Wait Until Element Is Visible       ${newyork}
+    Click Element                       ${newyork}
+
+    Click Element                       ${to}
+    Wait Until Element Is Visible       ${london}
+    Click Element                       ${london}
+
+    Click Element                       ${class}
+    Wait Until Element Is Visible       ${first}
+    Click Element                       ${first}
+
+    Click Element                       ${start_date}
+    Wait Until Element Is Visible       ${Date}
+    Click Element                       ${Date}
+    
+    Click Element                       ${button_date}
+    Click Element                       ${flight}
+    Click Element                       ${button_book}
+
 User choose price
-    Click Element               ${price}
-    Click Element               ${confrim}
-    sleep       3s
+    Wait Until Element Is Visible       ${price}
+    Click Element                       ${price}
+    Click Element                       ${confrim}
+
 Verity booking success
-    Element Should Be Visible   ${ticket}
+    Wait Until Element Is Visible       ${ticket}
+    Element Should Be Visible           ${ticket}

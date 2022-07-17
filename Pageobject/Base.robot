@@ -5,7 +5,7 @@ Library                     AppiumLibrary
 *** Variables ***
 ${REMOTE_URL}               http://127.0.0.1:4723/wd/hub
 ${PLATFORM_NAME}            Android
-${PLATFORM_VERSION}         9.0 
+${PLATFORM_VERSION}         8.1 
 ${DEVICE_NAME}              emulator-5554
 ${PACKAGE_NAME}             com.example.myapplication 
 ${ACTIVITY_NAME}            com.example.myapplication.MainActivity

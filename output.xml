@@ -1,49 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.8.0 on win32)" generated="20220705 00:08:51.747" rpa="false" schemaversion="3">
-<suite id="s1" name="Search" source="C:\Users\Wahyu Nugraha\Documents\mobile\Mobileflightapp\search.robot">
-<test id="s1-t1" name="user should be able to do an operation in Application" line="26">
-<kw name="Open Flight Application">
-<kw name="Open Application" library="AppiumLibrary">
-<arg>${REMOTE_URL}</arg>
-<arg>platformName=${PLATFORM_NAME}</arg>
-<arg>platformVersion=${PLATFORM_VERSION}</arg>
-<arg>deviceName=${DEVICE_NAME}</arg>
-<arg>appActivity=${ACTIVITY_NAME}</arg>
-<arg>appPackage=${PACKAGE_NAME}</arg>
-<arg>automationName=UiAutomator2</arg>
-<arg>newCommandTimeout=5000</arg>
-<doc>Opens a new application to given Appium server.
-Capabilities of appium server, Android and iOS,
-Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
-| *Option*            | *Man.* | *Description*     |
-| remote_url          | Yes    | Appium server url |
-| alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220705 00:08:52.000" endtime="20220705 00:09:05.494"/>
+<robot generator="Robot 5.0.1 (Python 3.8.0 on win32)" generated="20220717 15:52:55.505" rpa="false" schemaversion="3">
+<suite id="s1" name="Open" source="D:\Automation\mobile\Mobileautomationflightapp\open.robot">
+<test id="s1-t1" name="User Should Be Able To See Homepage" line="10">
+<kw name="Base.Open Flight Application" type="SETUP">
+<msg timestamp="20220717 15:52:55.770" level="FAIL">No keyword with name 'Base.Open Flight Application' found.</msg>
+<status status="FAIL" starttime="20220717 15:52:55.770" endtime="20220717 15:52:55.770"/>
 </kw>
-<status status="PASS" starttime="20220705 00:08:52.000" endtime="20220705 00:09:05.497"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.Button[1]</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220705 00:09:05.502" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.Button[1]'.</msg>
-<status status="PASS" starttime="20220705 00:09:05.499" endtime="20220705 00:09:06.546"/>
-</kw>
-<kw name="Input Text" library="AppiumLibrary">
-<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.EditText[1]</arg>
-<arg>${email}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220705 00:09:06.550" level="INFO">Typing text 'support@ngendigital.com' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.EditText[1]'</msg>
+<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20220705 00:09:08.763" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220705 00:09:06.939" endtime="20220705 00:09:08.763"/>
+<msg timestamp="20220717 15:52:55.773" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20220717 15:52:55.771" endtime="20220717 15:52:55.781"/>
 </kw>
-<msg timestamp="20220705 00:09:08.764" level="FAIL">ValueError: Element locator 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.EditText[1]' did not match any elements.</msg>
-<status status="FAIL" starttime="20220705 00:09:06.547" endtime="20220705 00:09:08.766"/>
+<msg timestamp="20220717 15:52:55.782" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20220717 15:52:55.784" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20220717 15:52:55.771" endtime="20220717 15:52:55.785">No application is open</status>
 </kw>
-<status status="FAIL" starttime="20220705 00:08:51.997" endtime="20220705 00:09:08.768">ValueError: Element locator 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.EditText[1]' did not match any elements.</status>
+<status status="FAIL" starttime="20220717 15:52:55.764" endtime="20220717 15:52:55.785">Setup failed:
+No keyword with name 'Base.Open Flight Application' found.
+
+Also teardown failed:
+No application is open</status>
 </test>
-<status status="FAIL" starttime="20220705 00:08:51.751" endtime="20220705 00:09:08.773"/>
+<doc>See Homepage Test Cases</doc>
+<status status="FAIL" starttime="20220717 15:52:55.506" endtime="20220717 15:52:55.787"/>
 </suite>
 <statistics>
 <total>
@@ -52,9 +33,12 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Search">Search</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Open">Open</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20220717 15:52:55.758" level="ERROR">Error in file 'D:\Automation\mobile\Mobileautomationflightapp\open.robot' on line 4: Resource file '..\Pageobject\open.robot' does not exist.</msg>
+<msg timestamp="20220717 15:52:55.761" level="ERROR">Error in file 'D:\Automation\mobile\Mobileautomationflightapp\open.robot' on line 5: Resource file '..\Pageobject\Base.robot' does not exist.</msg>
+<msg timestamp="20220717 15:52:55.782" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
 </errors>
 </robot>
