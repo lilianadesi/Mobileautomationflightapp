@@ -3,10 +3,6 @@ Documentation               Login
 Library                     AppiumLibrary 
 Variables                    ../Resources/locators.yaml
 
-*** Variables ***
-${valid_email}          support@ngendigital.com
-${valid_password}       abc123
-
 *** Keywords ***
 User tab element sigin
     Click Element            	    ${sigin}
@@ -24,11 +20,12 @@ User tab sigin button
     Click Element                   ${button_sigin}
     sleep       3s
 
-User should be able to login with valid data              
+User should be able to login with valid data
+    [Arguments]                     ${user_email}         ${user_password}    
     Click Element           	    ${sigin}
     Wait Until Element Is Visible   ${username}
-    Input Text                      ${username}             ${valid_email}
-    Input Text                      ${password}             ${valid_password}
+    User input username             ${user_email}
+    User input password             ${user_password}
     Click Element                   ${button_sigin}
     sleep   2s
     Element Should Be Visible       ${logo}

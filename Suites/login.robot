@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation       Login testcase
 Library             AppiumLibrary
+Library             DebugLibrary
 Resource            ../Pageobject/login.robot
 Resource            ../Pageobject/Base.robot
 Test Setup          Base.Open Flight Application
@@ -21,9 +22,10 @@ User not be able to login with invalid email
 
 User not be able to login with invalid password
     User tab element sigin
+    Debug
     User input username         user_email=${valid_email}
-    User input password         user_password=${valid_email}
+    User input password         user_password=${invalid_password}
     User tab sigin button
 
 User should be able to login with valid data
-    User should be able to login with valid data        
+    User should be able to login with valid data        user_email=${valid_email}       user_password=${valid_password}
